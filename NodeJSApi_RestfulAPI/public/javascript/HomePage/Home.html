@@ -1,0 +1,8 @@
+<div class="well container" ng-repeat="b in vm.bugs">
+	<h3><p>{{b.description}}</p></h3>
+	<h4><i>priority: </i>{{b.priority}}</h4>
+	<h4><i>submitted: </i>{{b.submittedBy}}</h4>
+	<h4><i>created: </i>{{b.created | date:'medium'}}</h4>
+	<button type="button" class="btn btn-warning" ui-sref="EditBug({id:b._id})">Edit</button>
+	<button type="button" class="btn btn-danger" ng-click="vm.deleteBug(b)">Delete</button>
+</div>

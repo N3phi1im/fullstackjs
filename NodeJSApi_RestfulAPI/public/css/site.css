@@ -1,0 +1,46 @@
+.form-well {
+  background-color: rgb(64, 64, 64);
+  border-radius: 5px;
+  border: 1px black solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.form-well .form-control {
+  width: 90%;
+  margin: auto;
+}
+
+.form-well label {
+  margin-left: 5%;
+}
+
+.edit-well {
+  background-color: rgb(64, 64, 64);
+  border-radius: 5px;
+  border: 1px black solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.edit-well .form-control {
+  width: 80%;
+  display: inline-block;
+  margin: auto;
+}
+
+.edit-well label {
+  margin-left: 5%;
+}
+
+.edit-well .label-edit {
+  width: 45%;
+}
+
+.center {
+  text-align: center;
+}
