@@ -3,9 +3,10 @@ import Bug = require('../models/Bug');
 
 let router = express.Router();
 
-var bugs = [];
-
-bugs.push(new Bug('There needs to be more comments in this code', 7, 'jeremy'));
+let bugs = [];
+bugs.push(new Bug('There is no angular yet!', 7, 'jeremy'));
+bugs.push(new Bug('Where is the html?', 2, 'isaiah'));
+bugs.push(new Bug('Why is there no css in this project?', 4, 'cody'));
 
 router.use(function(req, res, next) {
   //should console.log(method : /api/bugs) most of the time
@@ -31,7 +32,6 @@ router.param('id', function(req, res, next, id) {
 
 // GET /api/bugs
 router.get('/', function(req, res) {
-  console.log(bugs);
   //needs to return an array for the $resource
   res.json(bugs);
 });

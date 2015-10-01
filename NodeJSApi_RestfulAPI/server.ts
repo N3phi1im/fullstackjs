@@ -5,7 +5,6 @@ import bodyParser = require('body-parser');
 let app = express();
 let port = process.env.PORT || 3000;
 
-
 app.set('views', path.join(__dirname, 'views'));
 //set the view engine that will render HTML from the server to the client
 app.engine('.html', require('ejs').renderFile);

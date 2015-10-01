@@ -2,7 +2,9 @@ var express = require('express');
 var Bug = require('../models/Bug');
 var router = express.Router();
 var bugs = [];
-bugs.push(new Bug('There needs to be more comments in this code', 7, 'jeremy'));
+bugs.push(new Bug('There is no angular yet!', 7, 'jeremy'));
+bugs.push(new Bug('Where is the html?', 2, 'isaiah'));
+bugs.push(new Bug('Why is there no css in this project?', 4, 'cody'));
 router.use(function (req, res, next) {
     console.log(req.method + " : " + req.originalUrl);
     next();
@@ -21,7 +23,6 @@ router.param('id', function (req, res, next, id) {
     next(err);
 });
 router.get('/', function (req, res) {
-    console.log(bugs);
     res.json(bugs);
 });
 router.get('/:id', function (req, res) {
