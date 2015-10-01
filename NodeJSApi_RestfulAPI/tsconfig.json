@@ -21,13 +21,23 @@
     ],
     "files": [
         "./models/Bug.ts",
+        "./public/javascript/app.ts",
+        "./public/javascript/controllers/CreateBugController.ts",
+        "./public/javascript/controllers/EditBugController.ts",
+        "./public/javascript/controllers/HomeController.ts",
+        "./public/javascript/services/HomeFactory.ts",
         "./routes/bugRoutes.ts",
         "./server.ts",
+        "./typings/angularjs/angular-resource.d.ts",
+        "./typings/angularjs/angular-route.d.ts",
+        "./typings/angularjs/angular.d.ts",
         "./typings/body-parser/body-parser.d.ts",
         "./typings/express/express.d.ts",
         "./typings/guid/guid.d.ts",
+        "./typings/jquery/jquery.d.ts",
         "./typings/mime/mime.d.ts",
         "./typings/node/node.d.ts",
-        "./typings/serve-static/serve-static.d.ts"
+        "./typings/serve-static/serve-static.d.ts",
+        "./typings/tsd.d.ts"
     ]
 }

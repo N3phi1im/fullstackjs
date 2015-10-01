@@ -1,10 +1,11 @@
+var Guid = require('guid');
 var Bug = (function () {
-    function Bug(description, priority, submittedBy, created, _id) {
+    function Bug(description, priority, submittedBy) {
         this.description = description;
         this.priority = priority;
         this.submittedBy = submittedBy;
-        this.created = created;
-        this._id = _id;
+        this._id = Guid.raw();
+        this.created = new Date();
     }
     return Bug;
 })();

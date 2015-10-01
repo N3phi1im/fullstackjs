@@ -21,7 +21,8 @@ router.param('id', function (req, res, next, id) {
     next(err);
 });
 router.get('/', function (req, res) {
-    res.json({ bugs: bugs });
+    console.log(bugs);
+    res.json(bugs);
 });
 router.get('/:id', function (req, res) {
     res.json(req['bug']);

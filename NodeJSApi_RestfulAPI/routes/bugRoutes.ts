@@ -28,14 +28,19 @@ router.param('id', function(req, res, next, id) {
   }
   next(err);
 });
+
 // GET /api/bugs
 router.get('/', function(req, res) {
-  res.json({bugs: bugs});
+  console.log(bugs);
+  //needs to return an array for the $resource
+  res.json(bugs);
 });
+
 // GET /api/bugs/:id
 router.get('/:id', function(req, res) {
   res.json(req['bug']);
 });
+
 // POST /api/bugs
 router.post('/', function(req, res) {
   if(!req.body.description || !req.body.priority || !req.body.submittedBy) {
@@ -46,32 +51,20 @@ router.post('/', function(req, res) {
   //this send is made to be similar to how firebase sends back it's information
   res.send({name: bug._id, created: bug.created});
 });
-// PUT /api/bug/:id
+
+// PUT /api/bugs/:id
 router.put('/:id', function(req, res) {
   req.body._id = req['bug']._id;
   bugs[bugs.indexOf(req['bug'])] = req.body;
   res.json(req.body);
 });
 
+// DELETE /api/bugs/:id
 router.delete('/:id', function(req, res) {
   bugs.splice(bugs.indexOf(req['bug']), 1);
   res.send(200);
 });
 
-
-
-// router.patch('/:id', function(req, res) {
-//   var obj = res.body,
-//       bug = req.bug;
-//   for(var prop in obj) {
-//     if(obj.hasOwnProperty(prop) && prop != "_id") {
-//       bug[prop] = obj[prop]
-//     }
-//   }
-//   res.send(obj[prop]);
-// });
-
-//
 // router.use(function(err, req, res, next) {
 //   //if I am passing back my custom err object, use it. Otherwise just send the whole error.
 //   if(err.status && err.error) {

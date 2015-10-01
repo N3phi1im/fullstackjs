@@ -1,0 +1,36 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "angularjs/angular-route.d.ts": {
+      "commit": "30387ec3dd6eb426cc48522fd3aef09ada83aa48"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "angularjs/angular-resource.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "mime/mime.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "express/express.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "node/node.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "body-parser/body-parser.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    }
+  }
+}
