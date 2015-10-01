@@ -33,11 +33,11 @@
         "./typings/angularjs/angular.d.ts",
         "./typings/body-parser/body-parser.d.ts",
         "./typings/express/express.d.ts",
-        "./typings/guid/guid.d.ts",
         "./typings/jquery/jquery.d.ts",
         "./typings/mime/mime.d.ts",
         "./typings/node/node.d.ts",
         "./typings/serve-static/serve-static.d.ts",
-        "./typings/tsd.d.ts"
+        "./typings/tsd.d.ts",
+        "./typings/uuid/UUID.d.ts"
     ]
 }

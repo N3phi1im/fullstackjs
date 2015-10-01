@@ -31,6 +31,9 @@
     },
     "body-parser/body-parser.d.ts": {
       "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
+    },
+    "uuid/UUID.d.ts": {
+      "commit": "ebc69904eb78f94030d5d517b42db20867f679c0"
     }
   }
 }

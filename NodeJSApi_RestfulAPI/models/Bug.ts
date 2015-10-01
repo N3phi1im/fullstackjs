@@ -1,4 +1,4 @@
-import Guid = require('guid');
+import Uuid = require('uuid');
 
 class Bug {
   public _id: string;
@@ -8,7 +8,7 @@ class Bug {
     public priority:number,
     public submittedBy:string
   ) {
-    this._id = Guid.raw();
+    this._id = Uuid.raw();
     this.created = new Date();
   }
 }
