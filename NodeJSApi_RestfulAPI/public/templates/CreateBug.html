@@ -1,20 +1,20 @@
 <form class="well container" ng-submit="vm.createBug()">
   <div class="form-well">
     <label>Description</label>
-    <textarea class="form-control" ng-model="vm.newBug.description" placeholder="Description for the bug..." required></textarea>
+    <textarea class="form-control" ng-model="vm.bug.description" placeholder="Description for the bug..." required></textarea>
   </div>
   <br>
   <div class="form-well">
     <label>Priority</label>
-    <input placeholder="Priority for the bug..." class="form-control" ng-model="vm.newBug.priority" required />
+    <input placeholder="Priority for the bug..." class="form-control" ng-model="vm.bug.priority" required />
   </div>
   <br>
   <div class="form-well">
     <label>Your Name</label>
-    <input placeholder="Your Name..." class="form-control" ng-model="vm.newBug.submittedBy" required/>
+    <input placeholder="Your Name..." class="form-control" ng-model="vm.bug.submittedBy" required/>
   </div>
   <br>
   <div class="form-well center">
-    <button type="submit" class="btn btn-lg btn-success" ng-disabled="!vm.newBug.description || !vm.newBug.priority || !vm.newBug.submittedBy">Submit</button>
+    <button type="submit" class="btn btn-lg btn-success" ng-disabled="!vm.newBug.description || !vm.bug.priority || !vm.bug.submittedBy">Submit</button>
   </div>
 </form>
