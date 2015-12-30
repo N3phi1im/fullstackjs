@@ -45,11 +45,11 @@
 
     o.editBug = function(newBug, oldBug) {
       var q = $q.defer();
-      $http.patch('/api/bugs/' + oldBug._id).success(function(res) {
-        o.bugs[o.bugs.indexOf(bug)] = res;
+      $http.patch('/api/bugs/' + oldBug._id, newBug).success(function(res) {
+        o.bugs[o.bugs.indexOf(oldBug)] = newBug;
         q.resolve();
       });
-      return q.resolve();
+      return q.promise;
     }
 
     o.deleteBug = function(bug) {

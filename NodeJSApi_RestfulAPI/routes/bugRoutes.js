@@ -1,4 +1,4 @@
-var express = require('express')
+var express = require('express');
 var router = express.Router();
 var Bug = require('../models/Bugs.js');
 
@@ -23,7 +23,7 @@ router.param('id', function(req, res, next, id) {
   var err = {
     status: 400,
     error: 'Could not find bug: ' + id
-  }
+  };
   next(err);
 });
 // GET /api/bugs
@@ -37,7 +37,7 @@ router.get('/:id', function(req, res) {
 // POST /api/bugs
 router.post('/', function(req, res) {
   if(!req.body.description || !req.body.priority || !req.body.submittedBy) {
-    return res.status(400).send({error: 'Please fill out all fields.'})
+    return res.status(400).send({error: 'Please fill out all fields.'});
   }
   var bug = new Bug(req.body.description, req.body.priority, req.body.submittedBy);
   bugs.push(bug);
@@ -52,11 +52,11 @@ router.put('/:id', function(req, res) {
 });
 
 router.patch('/:id', function(req, res) {
-  var obj = res.body,
+  var obj = req.body,
       bug = req.bug;
   for(var prop in obj) {
     if(obj.hasOwnProperty(prop) && prop != "_id") {
-      bug[prop] = obj[prop]
+      bug[prop] = obj[prop];
     }
   }
   res.send(obj[prop]);
