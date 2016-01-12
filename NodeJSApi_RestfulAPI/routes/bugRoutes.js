@@ -1,3 +1,4 @@
+"use strict";
 var express = require('express');
 var Bug = require('../models/Bug');
 var router = express.Router();

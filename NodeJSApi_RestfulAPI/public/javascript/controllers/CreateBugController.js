@@ -15,7 +15,7 @@ var App;
                 });
             };
             return CreateBugController;
-        })();
+        }());
         angular.module('app').controller('CreateBugController', CreateBugController);
     })(Controllers = App.Controllers || (App.Controllers = {}));
 })(App || (App = {}));

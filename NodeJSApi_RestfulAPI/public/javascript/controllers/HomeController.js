@@ -20,7 +20,7 @@ var App;
                 });
             };
             return HomeController;
-        })();
+        }());
         angular.module('app').controller('HomeController', HomeController);
     })(Controllers = App.Controllers || (App.Controllers = {}));
 })(App || (App = {}));

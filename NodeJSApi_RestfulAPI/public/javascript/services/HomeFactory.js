@@ -26,7 +26,7 @@ var App;
                 return this.BugResource.delete({ id: id }).$promise;
             };
             return HomeFactory;
-        })();
+        }());
         Services.HomeFactory = HomeFactory;
         angular.module('app').service('HomeFactory', HomeFactory);
     })(Services = App.Services || (App.Services = {}));

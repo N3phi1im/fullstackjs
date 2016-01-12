@@ -16,7 +16,7 @@ var App;
                 });
             };
             return EditBugController;
-        })();
+        }());
         angular.module('app').controller('EditBugController', EditBugController);
     })(Controllers = App.Controllers || (App.Controllers = {}));
 })(App || (App = {}));

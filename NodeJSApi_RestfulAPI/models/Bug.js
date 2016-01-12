@@ -1,3 +1,4 @@
+"use strict";
 var Uuid = require('uuid');
 var Bug = (function () {
     function Bug(description, priority, submittedBy) {
@@ -8,5 +9,5 @@ var Bug = (function () {
         this.created = new Date();
     }
     return Bug;
-})();
+}());
 module.exports = Bug;

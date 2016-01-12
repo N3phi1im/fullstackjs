@@ -39,5 +39,8 @@
         "./typings/serve-static/serve-static.d.ts",
         "./typings/tsd.d.ts",
         "./typings/uuid/UUID.d.ts"
-    ]
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }
